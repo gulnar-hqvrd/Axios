@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState([]);
-  const nagigate = useNavigate()
+  const nagigate = useNavigate();
   useEffect(() => {
     axios
       .get("http://localhost:3000/data")
@@ -34,8 +34,12 @@ function App() {
                 <img src={d.img} alt="" />
                 <h3>{d.name}</h3>
                 <p>{d.details}</p>
-                <Link className="button" to={`/edit/${d.id}`}>Edit</Link>
-                <button onClick={e=>handleSubmit(d.id)} className="button">Delete</button>
+                <Link className="button" to={`/edit/${d.id}`}>
+                  Edit
+                </Link>
+                <button onClick={(e) => handleSubmit(d.id)} className="button">
+                  Delete
+                </button>
               </div>
             );
           })}
@@ -44,12 +48,17 @@ function App() {
     </>
   );
 
-  function handleSubmit(id){
-    const conf = window.confirm("Do you want to delete")
-    if(conf){
-      axios.delete('http://localhost:3000/data/'+id).then(res=> {alert("flower delete");
-        nagigate("/")
-    }).catch(err=>console.log(err))}
+  function handleSubmit(id) {
+    const conf = window.confirm("Do you want to delete");
+    if (conf) {
+      axios
+        .delete("http://localhost:3000/data/" + id)
+        .then((res) => {
+          alert("flower delete");
+          nagigate("/");
+        })
+        .catch((err) => console.log(err));
+    }
   }
 }
 
