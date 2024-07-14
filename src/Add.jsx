@@ -20,24 +20,24 @@ function Add() {
   return (
     <>
       <div className="wrapper">
-        Add Product
+        <h2>Add Product </h2>
         <div className="add">
           <form onSubmit={handleSubmit}>
+            Flower img address :{" "}
             <input
               type="text"
-              placeholder="Enter flower image address"
               onChange={(e) => setInput({ ...input, img: e.target.value })}
             />{" "}
             <br />
+            Flower name:{" "}
             <input
               type="text"
-              placeholder="Enter flower name"
               onChange={(e) => setInput({ ...input, name: e.target.value })}
             />{" "}
             <br />
+            Flower details :{" "}
             <input
               type="text"
-              placeholder="Enter flower details"
               onChange={(e) => setInput({ ...input, details: e.target.value })}
             />{" "}
             <br />

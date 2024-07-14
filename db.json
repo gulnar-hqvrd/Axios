@@ -1,16 +1,28 @@
 {
   "data": [
     {
-      "id": 3,
-      "img": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSfSqtvoJSgfWv7vHqsUwCYxMZOoYwT8irANo8XdQ1x7yexOcQqCWkU5iN2Mp9wkwGo",
-      "name": "Caq",
-      "details": "Dianthus caryophyllus, commonly known as carnation or clove pink, is a species of Dianthus native to the Mediterranean region. "
-    },
-    {
       "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq0a7k0WEpRQyiT_e2zqxnYlOcjn5clwGfuEfTHRWxQRG_CiJG",
       "name": "Lily",
-      "details": "Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large and often prominent flowers. ",
+      "details": "Lilium is a genus of herbaceous flowering plants growing from bulbs. ",
       "id": 4
+    },
+    {
+      "img": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSfSqtvoJSgfWv7vHqsUwCYxMZOoYwT8irANo8XdQ1x7yexOcQqCWkU5iN2Mp9wkwGo",
+      "name": "Carnation",
+      "details": "Dianthus caryophyllus, commonly known as carnation or clove pink",
+      "id": 5
+    },
+    {
+      "img": "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSbywUFuXvFMZ1dqCi--Qc4bjlee40_0qvyaggtR1fWqbMQtsT7GfjWZj4oeOf5lRNq",
+      "name": "Orchid",
+      "details": "Orchids are plants that belong to the family Orchidaceae,",
+      "id": 6
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Chrysanthemum_nangkingense.jpg/800px-Chrysanthemum_nangkingense.jpg",
+      "name": "Chrysanthemum",
+      "details": "Chrysanthemums, sometimes called mums or chrysanths, are flowering plants",
+      "id": 7
     }
   ]
 }

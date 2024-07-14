@@ -16,10 +16,11 @@ function App() {
     <>
       <div className="wrapper">
         <h2>
-          Add Product{" "}
-          <Link to="/create" className="button">
-            Add Product
+          Add Product
+        <button className="button"><Link to="/create" className="button">
+            Add
           </Link>
+          </button>  
         </h2>
         <div className="products">
           {/* <div className='product'>
@@ -34,9 +35,9 @@ function App() {
                 <img src={d.img} alt="" />
                 <h3>{d.name}</h3>
                 <p>{d.details}</p>
-                <Link className="button" to={`/edit/${d.id}`}>
+              <button tton className="button"> <Link className="button" to={`/edit/${d.id}`}>
                   Edit
-                </Link>
+                </Link></button> 
                 <button onClick={(e) => handleSubmit(d.id)} className="button">
                   Delete
                 </button>

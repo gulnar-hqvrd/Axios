@@ -24,33 +24,32 @@ function Edit() {
   return (
     <>
       <div className="wrapper">
-        Add Product
+        <h2>
+        Edit Product
+        </h2>
         <div className="add">
           <form onSubmit={handleSubmit}>
-            <input
+          Flower id :  <input
               type="text"
               disabled
               placeholder="Enter flower id"
               value={data.id}
             />{" "}
             <br />
-            <input
+            Flower img address : <input
               type="text"
-              placeholder="Enter flower image address"
               value={data.img}
               onChange={(e) => setData({ ...data, img: e.target.value })}
             />{" "}
             <br />
-            <input
+            Flower name: <input
               type="text"
-              placeholder="Enter flower name"
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
             />{" "}
             <br />
-            <input
+            Flower details :<input
               type="text"
-              placeholder="Enter flower details"
               value={data.details}
               onChange={(e) => setData({ ...data, details: e.target.value })}
             />{" "}
