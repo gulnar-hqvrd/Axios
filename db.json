@@ -14,15 +14,9 @@
     },
     {
       "img": "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSbywUFuXvFMZ1dqCi--Qc4bjlee40_0qvyaggtR1fWqbMQtsT7GfjWZj4oeOf5lRNq",
-      "name": "Orchid",
+      "name": "Orchi",
       "details": "Orchids are plants that belong to the family Orchidaceae,",
       "id": 6
-    },
-    {
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Chrysanthemum_nangkingense.jpg/800px-Chrysanthemum_nangkingense.jpg",
-      "name": "Chrysanthemum",
-      "details": "Chrysanthemums, sometimes called mums or chrysanths, are flowering plants",
-      "id": 7
     }
   ]
 }

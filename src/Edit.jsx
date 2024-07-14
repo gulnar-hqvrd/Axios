@@ -32,7 +32,6 @@ function Edit() {
           Flower id :  <input
               type="text"
               disabled
-              placeholder="Enter flower id"
               value={data.id}
             />{" "}
             <br />

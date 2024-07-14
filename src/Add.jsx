@@ -23,23 +23,23 @@ function Add() {
         <h2>Add Product </h2>
         <div className="add">
           <form onSubmit={handleSubmit}>
-            Flower img address :{" "}
+            Flower img address :
             <input
               type="text"
               onChange={(e) => setInput({ ...input, img: e.target.value })}
-            />{" "}
+            />
             <br />
-            Flower name:{" "}
+            Flower name:
             <input
               type="text"
               onChange={(e) => setInput({ ...input, name: e.target.value })}
-            />{" "}
+            />
             <br />
-            Flower details :{" "}
+            Flower details :
             <input
               type="text"
               onChange={(e) => setInput({ ...input, details: e.target.value })}
-            />{" "}
+            />
             <br />
             <button className="button">Submit</button>
           </form>
