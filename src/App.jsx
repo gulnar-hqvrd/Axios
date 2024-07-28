@@ -4,12 +4,13 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Loading from "./components/loading";
-import Search from "./components/search";
+import Modal from "./components/Modal";
 function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const nagigate = useNavigate();
   const [query, setQuery] = useState("");
+  const [modalShow , setModalShow] = useState(false)
   useEffect(() => {
     axios
       .get("http://localhost:3000/data")
@@ -21,19 +22,21 @@ function App() {
   }, []);
   // console.log(data.filter(d.name.toLowerCase.includes("Li")));
   // console.log(query);
-  console.log(data.filter((user) => user.name.toLowerCase().includes("li")));
+  // console.log(data.filter((user) => user.name.toLowerCase().includes("li")));
   return (
     <>
+    {modalShow && <Modal setModalShow = {setModalShow} />}
       {loading && <Loading />}
       <div className="wrapper">
         <h2>
           Add Product
-          <button className="button">
-            <Link to="/create" className="button">
-              Add
-            </Link>
+          <button onClick={()=>setModalShow(true)} className="button">
+            {/* className = "button" */}
+            {/* <Link to="/create" className="button">
+            </Link> */}
+
+            Add
           </button>
-          {/* <Search/> */}
           <div className="search">
             <input
               type="text"
